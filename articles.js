@@ -51,6 +51,80 @@ const articles = [
 
             <p><strong>Sigma tiene dos formas minúsculas:</strong> La letra sigma (σ) tiene una forma especial (ς) que se usa únicamente al final de las palabras.</p>
         `
+    },
+    {
+        id: 'mysql-cheatsheet',
+        title: 'MySQL Cheatsheet Básico',
+        description: 'Comandos esenciales de MySQL que debes conocer',
+        content: `
+            <h1>MySQL Cheatsheet Básico</h1>
+            <div class="article-meta">Los comandos más útiles de MySQL en un solo lugar</div>
+
+            <p>MySQL es uno de los sistemas de gestión de bases de datos más populares. Aquí tienes una guía rápida con los comandos esenciales que necesitas conocer.</p>
+
+            <h2>Conexión y gestión de bases de datos</h2>
+
+            <ul>
+                <li><code>mysql -u usuario -p</code> - Conectar a MySQL</li>
+                <li><code>SHOW DATABASES;</code> - Listar todas las bases de datos</li>
+                <li><code>CREATE DATABASE nombre;</code> - Crear una base de datos</li>
+                <li><code>USE nombre;</code> - Seleccionar una base de datos</li>
+                <li><code>DROP DATABASE nombre;</code> - Eliminar una base de datos</li>
+            </ul>
+
+            <h2>Trabajar con tablas</h2>
+
+            <ul>
+                <li><code>SHOW TABLES;</code> - Listar todas las tablas</li>
+                <li><code>DESCRIBE tabla;</code> - Ver estructura de una tabla</li>
+                <li><code>CREATE TABLE tabla (id INT PRIMARY KEY, nombre VARCHAR(50));</code> - Crear tabla</li>
+                <li><code>DROP TABLE tabla;</code> - Eliminar tabla</li>
+                <li><code>ALTER TABLE tabla ADD columna VARCHAR(100);</code> - Añadir columna</li>
+            </ul>
+
+            <h2>Consultas básicas (SELECT)</h2>
+
+            <ul>
+                <li><code>SELECT * FROM tabla;</code> - Seleccionar todos los datos</li>
+                <li><code>SELECT columna1, columna2 FROM tabla;</code> - Seleccionar columnas específicas</li>
+                <li><code>SELECT * FROM tabla WHERE condicion;</code> - Filtrar con WHERE</li>
+                <li><code>SELECT * FROM tabla ORDER BY columna DESC;</code> - Ordenar resultados</li>
+                <li><code>SELECT * FROM tabla LIMIT 10;</code> - Limitar resultados</li>
+            </ul>
+
+            <h2>Insertar, actualizar y eliminar</h2>
+
+            <ul>
+                <li><code>INSERT INTO tabla (col1, col2) VALUES ('val1', 'val2');</code> - Insertar datos</li>
+                <li><code>UPDATE tabla SET columna = 'valor' WHERE condicion;</code> - Actualizar datos</li>
+                <li><code>DELETE FROM tabla WHERE condicion;</code> - Eliminar datos</li>
+            </ul>
+
+            <h2>Joins básicos</h2>
+
+            <ul>
+                <li><code>SELECT * FROM tabla1 INNER JOIN tabla2 ON tabla1.id = tabla2.id;</code> - INNER JOIN</li>
+                <li><code>SELECT * FROM tabla1 LEFT JOIN tabla2 ON tabla1.id = tabla2.id;</code> - LEFT JOIN</li>
+            </ul>
+
+            <h2>Funciones útiles</h2>
+
+            <ul>
+                <li><code>COUNT(*)</code> - Contar registros</li>
+                <li><code>SUM(columna)</code> - Sumar valores</li>
+                <li><code>AVG(columna)</code> - Promedio</li>
+                <li><code>MAX(columna)</code> - Valor máximo</li>
+                <li><code>MIN(columna)</code> - Valor mínimo</li>
+            </ul>
+
+            <h2>Consejos rápidos</h2>
+
+            <p><strong>Siempre usa WHERE en UPDATE y DELETE:</strong> Sin WHERE, ¡modificarás o borrarás TODAS las filas!</p>
+
+            <p><strong>Punto y coma obligatorio:</strong> Todos los comandos SQL deben terminar con <code>;</code></p>
+
+            <p><strong>No distingue mayúsculas:</strong> <code>SELECT</code> y <code>select</code> funcionan igual, pero por convención se escribe en mayúsculas.</p>
+        `
     }
 ];
 
