@@ -29,10 +29,10 @@ body {
 
 /* Logo */
 .logo {
-    font-size: 96px;
+    font-size: 72px;
     font-weight: 400;
     color: #34a853;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
     font-family: 'Arial', sans-serif;
     letter-spacing: -2px;
@@ -41,6 +41,15 @@ body {
 .logo.small {
     font-size: 48px;
     margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #5f6368;
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.6;
+    margin-bottom: 40px;
 }
 
 /* Botón principal de descubrir */
@@ -226,11 +235,16 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     .logo {
-        font-size: 64px;
+        font-size: 42px;
     }
 
     .logo.small {
         font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        padding: 0 20px;
     }
 
     #article-content {
