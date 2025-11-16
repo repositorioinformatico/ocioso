@@ -3,10 +3,23 @@
 class OciosoApp {
     constructor() {
         this.currentPage = 'home';
+        this.colors = [
+            '#34a853', // Verde Google
+            '#4285f4', // Azul Google
+            '#ea4335', // Rojo Google
+            '#fbbc04', // Amarillo Google
+            '#9c27b0', // Púrpura
+            '#00bcd4', // Cian
+            '#ff5722', // Naranja
+            '#795548'  // Marrón
+        ];
         this.init();
     }
 
     init() {
+        // Aplicar color aleatorio al logo
+        this.setRandomLogoColor();
+
         // Elementos del DOM
         this.pages = {
             home: document.getElementById('home-page'),
@@ -30,6 +43,14 @@ class OciosoApp {
 
         // Cargar página inicial basada en URL
         this.loadFromURL();
+    }
+
+    setRandomLogoColor() {
+        const randomColor = this.colors[Math.floor(Math.random() * this.colors.length)];
+        const logos = document.querySelectorAll('.logo');
+        logos.forEach(logo => {
+            logo.style.color = randomColor;
+        });
     }
 
     loadFromURL() {
