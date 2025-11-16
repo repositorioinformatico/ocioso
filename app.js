@@ -34,7 +34,7 @@ class OciosoApp {
         this.articleContent = document.getElementById('article-content');
 
         // Event listeners
-        this.discoverBtn.addEventListener('click', () => this.showArticlesList());
+        this.discoverBtn.addEventListener('click', () => this.showRandomArticle());
         this.backHomeBtn.addEventListener('click', () => this.showHome());
         this.backArticlesBtn.addEventListener('click', () => this.showArticlesList());
 
@@ -158,6 +158,13 @@ class OciosoApp {
                 <p>Lo sentimos, el artículo que buscas no existe.</p>
             `;
         }
+    }
+
+    showRandomArticle() {
+        // Seleccionar un artículo aleatorio
+        const randomIndex = Math.floor(Math.random() * window.articlesData.length);
+        const randomArticle = window.articlesData[randomIndex];
+        this.showArticle(randomArticle.id);
     }
 }
 
