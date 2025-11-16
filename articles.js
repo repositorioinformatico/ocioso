@@ -191,6 +191,91 @@ const articles = [
                 <li><a href="http://karma-runner.github.io/1.0/dev/git-commit-msg.html" target="_blank">Karma Git Commit Msg</a></li>
             </ul>
         `
+    },
+    {
+        id: 'git-explicado-facil',
+        title: 'Git: Control de Versiones Explicado Fácilmente',
+        description: 'Entiende Git con analogías de la vida real',
+        content: `
+            <h1>Git: Control de Versiones Explicado Fácilmente</h1>
+            <div class="article-meta">Porque Git no tiene por qué ser complicado</div>
+
+            <h2>La analogía del videojuego</h2>
+
+            <p>Imagina que estás jugando a un videojuego. Llegas a un punto difícil y decides <strong>guardar la partida</strong>. Si fallas, simplemente cargas desde ese punto guardado y lo intentas de nuevo.</p>
+
+            <p><strong>Git funciona exactamente así, pero con tu código.</strong> Cada vez que haces un "commit", estás guardando la partida de tu proyecto.</p>
+
+            <h2>¿Qué es Git?</h2>
+
+            <p>Git es un sistema de control de versiones. En cristiano: es una máquina del tiempo para tu código que te permite:</p>
+
+            <ul>
+                <li>Volver atrás si la cagas</li>
+                <li>Ver quién cambió qué y cuándo</li>
+                <li>Trabajar en equipo sin pisarse los cambios</li>
+                <li>Experimentar sin miedo a romper nada</li>
+            </ul>
+
+            <h2>Los conceptos básicos (con ejemplos de la vida real)</h2>
+
+            <p><strong>Repository (Repositorio)</strong> - Tu proyecto completo</p>
+            <p>Piensa en tu repositorio como tu <strong>carpeta del proyecto</strong>. Contiene todo: código, imágenes, documentos, y el historial completo de cambios.</p>
+
+            <p><strong>Commit</strong> - Un punto de guardado</p>
+            <p>Como sacar una <strong>foto instantánea</strong> de tu proyecto en un momento específico. "Hoy a las 3pm, mi código se veía así". Cada commit tiene un mensaje explicando qué cambiaste.</p>
+
+            <p><strong>Branch (Rama)</strong> - Una realidad alternativa</p>
+            <p>Imagina que estás escribiendo un libro. La rama "main" es tu historia principal. Pero quieres probar un final alternativo sin tocar la historia original. Creas una <strong>rama nueva</strong>, experimentas, y si te gusta, la fusionas con la historia principal. Si no, simplemente la eliminas.</p>
+
+            <p><strong>Merge (Fusionar)</strong> - Unir dos realidades</p>
+            <p>Siguiendo con el libro: has terminado tu final alternativo y te gusta. Ahora lo <strong>fusionas</strong> con la historia principal. Git intenta combinar ambos automáticamente.</p>
+
+            <p><strong>Pull/Push</strong> - Sincronizar con la nube</p>
+            <p>Es como Dropbox o Google Drive. <code>git pull</code> = descargar los cambios de otros. <code>git push</code> = subir tus cambios para que otros los vean.</p>
+
+            <h2>El flujo básico de trabajo</h2>
+
+            <ul>
+                <li><strong>1. Modificas archivos</strong> - Escribes código, cambias cosas</li>
+                <li><strong>2. git add</strong> - Seleccionas qué cambios quieres guardar (como poner cosas en el carrito de compra)</li>
+                <li><strong>3. git commit</strong> - Guardas la partida con un mensaje ("Añadido login de usuarios")</li>
+                <li><strong>4. git push</strong> - Subes tus cambios al servidor (GitHub, GitLab, etc.)</li>
+            </ul>
+
+            <h2>¿Por qué es tan importante?</h2>
+
+            <p><strong>Sin Git:</strong></p>
+            <ul>
+                <li>proyecto_final.zip</li>
+                <li>proyecto_final_final.zip</li>
+                <li>proyecto_final_final_AHORA_SI.zip</li>
+                <li>proyecto_final_final_AHORA_SI_v2.zip</li>
+            </ul>
+
+            <p><strong>Con Git:</strong></p>
+            <p>Un solo proyecto con historial completo de todos los cambios, quién los hizo y por qué. Puedes volver a cualquier punto en el tiempo con un simple comando.</p>
+
+            <h2>El superpoder secreto</h2>
+
+            <p>La verdadera magia de Git es que te permite <strong>experimentar sin miedo</strong>. ¿Quieres probar una idea loca? Crea una rama, pruébala. Si funciona, genial. Si no, simplemente la borras y es como si nunca hubiera existido.</p>
+
+            <p>Es como tener un botón de "deshacer" infinito que recuerda cada paso que has dado en tu proyecto.</p>
+
+            <h2>Comandos esenciales para empezar</h2>
+
+            <ul>
+                <li><code>git init</code> - Crear un nuevo repositorio</li>
+                <li><code>git status</code> - Ver qué ha cambiado</li>
+                <li><code>git add .</code> - Añadir todos los cambios</li>
+                <li><code>git commit -m "mensaje"</code> - Guardar la partida</li>
+                <li><code>git push</code> - Subir cambios</li>
+                <li><code>git pull</code> - Descargar cambios</li>
+                <li><code>git clone url</code> - Copiar un proyecto existente</li>
+            </ul>
+
+            <p><strong>Recuerda:</strong> Git puede parecer intimidante al principio, pero una vez que lo entiendes, te preguntarás cómo pudiste vivir sin él.</p>
+        `
     }
 ];
 
