@@ -24,19 +24,27 @@ class OciosoApp {
         this.pages = {
             home: document.getElementById('home-page'),
             articles: document.getElementById('articles-page'),
-            article: document.getElementById('article-page')
+            article: document.getElementById('article-page'),
+            fact: document.getElementById('fact-page')
         };
 
         this.discoverBtn = document.getElementById('discover-btn');
+        this.factBtn = document.getElementById('fact-btn');
         this.backHomeBtn = document.getElementById('back-home');
         this.backArticlesBtn = document.getElementById('back-articles');
+        this.backHomeFactBtn = document.getElementById('back-home-fact');
+        this.anotherFactBtn = document.getElementById('another-fact-btn');
         this.articlesList = document.getElementById('articles-list');
         this.articleContent = document.getElementById('article-content');
+        this.factText = document.getElementById('fact-text');
 
         // Event listeners
         this.discoverBtn.addEventListener('click', () => this.showRandomArticle());
+        this.factBtn.addEventListener('click', () => this.showRandomFact());
         this.backHomeBtn.addEventListener('click', () => this.showHome());
         this.backArticlesBtn.addEventListener('click', () => this.showArticlesList());
+        this.backHomeFactBtn.addEventListener('click', () => this.showHome());
+        this.anotherFactBtn.addEventListener('click', () => this.showRandomFact(false));
 
         // Manejar navegación del navegador
         window.addEventListener('popstate', (e) => this.handlePopState(e));
@@ -52,14 +60,14 @@ class OciosoApp {
             logo.style.color = randomColor;
         });
 
-        // Cambiar también el color del botón
-        const button = document.querySelector('.discover-button');
-        if (button) {
+        // Cambiar también el color de los botones
+        const buttons = document.querySelectorAll('.discover-button, .fact-button, .another-fact-button');
+        buttons.forEach(button => {
             // Crear un gradiente con el color aleatorio
             const darkerColor = this.darkenColor(randomColor, 20);
             button.style.background = `linear-gradient(135deg, ${randomColor} 0%, ${darkerColor} 100%)`;
             button.style.boxShadow = `0 4px 15px ${randomColor}66`;
-        }
+        });
     }
 
     darkenColor(color, percent) {
@@ -165,6 +173,20 @@ class OciosoApp {
         const randomIndex = Math.floor(Math.random() * window.articlesData.length);
         const randomArticle = window.articlesData[randomIndex];
         this.showArticle(randomArticle.id);
+    }
+
+    showRandomFact(pushState = true) {
+        // Seleccionar un hecho aleatorio
+        const randomIndex = Math.floor(Math.random() * window.factsData.length);
+        const randomFact = window.factsData[randomIndex];
+
+        // Mostrar el hecho
+        this.factText.textContent = randomFact;
+        this.showPage('fact');
+
+        if (pushState) {
+            history.pushState({ page: 'fact' }, 'Hecho curioso - Ocioso', '/?fact=random');
+        }
     }
 }
 

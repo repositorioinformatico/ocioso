@@ -13,9 +13,14 @@
             <div class="container">
                 <h1 class="logo">¡Ocioso! ¿Hoy no quieres estudiar?</h1>
                 <p class="subtitle">Muy mal, pues deberías estar estudiando, pero al menos aprende algo curioso o que te será de utilidad en tu vida. Recuerda que si el profesor te ve viendo contenidos de aquí puede que no te permita leerlos o sí, tú prueba.</p>
-                <button id="discover-btn" class="discover-button">
-                    💡 Cosas que no conocías
-                </button>
+                <div class="buttons-container">
+                    <button id="discover-btn" class="discover-button">
+                        💡 Cosas que no conocías
+                    </button>
+                    <button id="fact-btn" class="fact-button">
+                        🎲 Hecho curioso al azar
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -36,8 +41,24 @@
                 <div id="article-content"></div>
             </div>
         </div>
+
+        <!-- Página de hecho curioso -->
+        <div id="fact-page" class="page">
+            <div class="container fact-container-page">
+                <div class="fact-display">
+                    <div class="fact-icon">🎲</div>
+                    <p id="fact-text" class="fact-text"></p>
+                    <p class="fact-source">Fuente: <a href="https://gist.github.com/meain/9b348faca71f23302c13a15f988f2323" target="_blank">Random Facts Collection</a></p>
+                </div>
+                <div class="fact-buttons">
+                    <button id="another-fact-btn" class="another-fact-button">🔄 Otro hecho</button>
+                    <button id="back-home-fact" class="back-button">← Volver al inicio</button>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <script src="facts.js"></script>
     <script src="articles.js"></script>
     <script src="app.js"></script>
 </body>
