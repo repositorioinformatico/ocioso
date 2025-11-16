@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocioso - Cosas que no conocías</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Página de inicio -->
+        <div id="home-page" class="page active">
+            <div class="container">
+                <h1 class="logo">Ocioso</h1>
+                <button id="discover-btn" class="discover-button">
+                    💡 Cosas que no conocías
+                </button>
+            </div>
+        </div>
+
+        <!-- Página de listado de artículos -->
+        <div id="articles-page" class="page">
+            <div class="container">
+                <h1 class="logo small">Ocioso</h1>
+                <h2 class="articles-title">Descubre cosas fascinantes</h2>
+                <div id="articles-list" class="articles-list"></div>
+                <button id="back-home" class="back-button">← Volver al inicio</button>
+            </div>
+        </div>
+
+        <!-- Página de artículo individual -->
+        <div id="article-page" class="page">
+            <div class="article-container">
+                <button id="back-articles" class="back-button">← Volver a la lista</button>
+                <div id="article-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="articles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
