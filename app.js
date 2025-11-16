@@ -51,6 +51,24 @@ class OciosoApp {
         logos.forEach(logo => {
             logo.style.color = randomColor;
         });
+
+        // Cambiar también el color del botón
+        const button = document.querySelector('.discover-button');
+        if (button) {
+            // Crear un gradiente con el color aleatorio
+            const darkerColor = this.darkenColor(randomColor, 20);
+            button.style.background = `linear-gradient(135deg, ${randomColor} 0%, ${darkerColor} 100%)`;
+            button.style.boxShadow = `0 4px 15px ${randomColor}66`;
+        }
+    }
+
+    darkenColor(color, percent) {
+        // Convertir hex a RGB
+        const num = parseInt(color.replace('#', ''), 16);
+        const r = Math.max(0, (num >> 16) - percent);
+        const g = Math.max(0, ((num >> 8) & 0x00FF) - percent);
+        const b = Math.max(0, (num & 0x0000FF) - percent);
+        return `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, '0')}`;
     }
 
     loadFromURL() {
