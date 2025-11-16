@@ -276,6 +276,118 @@ const articles = [
 
             <p><strong>Recuerda:</strong> Git puede parecer intimidante al principio, pero una vez que lo entiendes, te preguntarás cómo pudiste vivir sin él.</p>
         `
+    },
+    {
+        id: 'blogs-ciberseguridad',
+        title: 'Blogs Esenciales de Ciberseguridad',
+        description: 'Los mejores recursos para estar al día en seguridad informática',
+        content: `
+            <h1>Blogs Esenciales de Ciberseguridad</h1>
+            <div class="article-meta">Mantente informado sobre amenazas, vulnerabilidades y técnicas de seguridad</div>
+
+            <p>Si te interesa la ciberseguridad, mantenerte actualizado es fundamental. Aquí tienes una lista curada de los blogs más importantes del sector, desde análisis de malware hasta investigación de amenazas avanzadas.</p>
+
+            <h2>🔴 Análisis de Incidentes y Amenazas</h2>
+
+            <ul>
+                <li><a href="https://thedfirreport.com/" target="_blank">The DFIR Report</a> - Análisis detallados de incidentes reales</li>
+                <li><a href="https://unit42.paloaltonetworks.com/" target="_blank">Unit 42 (Palo Alto)</a> - Investigación de amenazas globales</li>
+                <li><a href="https://www.volexity.com/blog/" target="_blank">Volexity</a> - Análisis de APTs y ciberespionaje</li>
+                <li><a href="https://www.fireeye.com/blog/" target="_blank">FireEye</a> - Inteligencia de amenazas avanzadas</li>
+                <li><a href="https://blog.talosintelligence.com/" target="_blank">Cisco Talos</a> - Investigación de malware y vulnerabilidades</li>
+            </ul>
+
+            <h2>🛡️ Empresas de Seguridad</h2>
+
+            <ul>
+                <li><a href="https://www.crowdstrike.com/blog/" target="_blank">CrowdStrike</a> - Endpoint security y threat hunting</li>
+                <li><a href="https://www.microsoft.com/security/blog/" target="_blank">Microsoft Security</a> - Investigaciones y actualizaciones de seguridad</li>
+                <li><a href="https://www.wiz.io/blog/" target="_blank">Wiz</a> - Seguridad en la nube</li>
+                <li><a href="https://www.huntress.com/blog/" target="_blank">Huntress</a> - Detección y respuesta de amenazas</li>
+                <li><a href="https://www.rapid7.com/blog/" target="_blank">Rapid7</a> - Vulnerabilidades y exploits</li>
+                <li><a href="https://labs.sentinelone.com/" target="_blank">SentinelOne Labs</a> - Investigación de malware</li>
+            </ul>
+
+            <h2>🐛 Vulnerabilidades y Exploits</h2>
+
+            <ul>
+                <li><a href="https://www.zerodayinitiative.com/blog/" target="_blank">Zero Day Initiative</a> - Programa de recompensas por bugs</li>
+                <li><a href="https://blog.orange.tw/" target="_blank">Orange Tsai Blog</a> - Investigación de vulnerabilidades</li>
+                <li><a href="https://codewhitesec.blogspot.com/" target="_blank">Code White Security</a> - Análisis técnicos profundos</li>
+            </ul>
+
+            <h2>🦠 Análisis de Malware</h2>
+
+            <ul>
+                <li><a href="https://blog.malwarebytes.com/" target="_blank">Malwarebytes Labs</a> - Análisis de malware y amenazas</li>
+                <li><a href="https://securelist.com/" target="_blank">Securelist (Kaspersky)</a> - Investigación global de amenazas</li>
+                <li><a href="https://blog.malwaremustdie.org/" target="_blank">MalwareMustDie</a> - Análisis técnico de malware</li>
+                <li><a href="https://www.hexacorn.com/blog/" target="_blank">Hexacorn</a> - Análisis forense y malware</li>
+                <li><a href="https://malware.prevenity.com/" target="_blank">Prevenity Malware</a> - Muestras y análisis</li>
+            </ul>
+
+            <h2>📰 Noticias y Actualizaciones</h2>
+
+            <ul>
+                <li><a href="https://krebsonsecurity.com" target="_blank">Krebs on Security</a> - Investigación periodística en seguridad</li>
+                <li><a href="https://www.bleepingcomputer.com/feed/" target="_blank">BleepingComputer</a> - Noticias diarias de seguridad</li>
+                <li><a href="https://threatpost.com" target="_blank">Threatpost</a> - Breaking news en ciberseguridad</li>
+                <li><a href="https://nakedsecurity.sophos.com/" target="_blank">Naked Security (Sophos)</a> - Noticias accesibles</li>
+                <li><a href="https://www.darkreading.com/attacks-and-breaches/" target="_blank">Dark Reading</a> - Ataques y brechas de seguridad</li>
+                <li><a href="https://securityaffairs.co" target="_blank">Security Affairs</a> - Noticias internacionales</li>
+            </ul>
+
+            <h2>🔬 Investigación y Labs</h2>
+
+            <ul>
+                <li><a href="https://www.welivesecurity.com/" target="_blank">WeLiveSecurity (ESET)</a> - Investigación y análisis</li>
+                <li><a href="https://labsblog.f-secure.com/" target="_blank">F-Secure Labs</a> - Investigación técnica</li>
+                <li><a href="https://blog.trendmicro.com/trendlabs-security-intelligence/" target="_blank">Trend Micro</a> - Inteligencia de amenazas</li>
+                <li><a href="https://www.zscaler.com/blogs/security-research" target="_blank">Zscaler Research</a> - Investigación en seguridad cloud</li>
+                <li><a href="https://researchcenter.paloaltonetworks.com" target="_blank">Palo Alto Research</a> - Centro de investigación</li>
+            </ul>
+
+            <h2>🏛️ Instituciones y CERTs</h2>
+
+            <ul>
+                <li><a href="https://www.us-cert.gov/ncas/alerts" target="_blank">US-CERT</a> - Alertas oficiales USA</li>
+                <li><a href="https://www.cert.pl/en/" target="_blank">CERT Polska</a> - CERT de Polonia</li>
+                <li><a href="https://www.govcert.admin.ch/blog/" target="_blank">GovCERT.ch</a> - CERT de Suiza</li>
+                <li><a href="https://blog.jpcert.or.jp/" target="_blank">JPCERT</a> - CERT de Japón</li>
+            </ul>
+
+            <h2>👨‍💻 Blogs Personales Destacados</h2>
+
+            <ul>
+                <li><a href="https://az4n6.blogspot.com/" target="_blank">az4n6</a> - Análisis forense</li>
+                <li><a href="https://medium.com/@ateixei" target="_blank">@ateixei</a> - Investigación de seguridad</li>
+                <li><a href="https://medium.com/@kostas-ts" target="_blank">@kostas-ts</a> - Pentesting y exploits</li>
+                <li><a href="https://medium.com/@jaredcatkinson" target="_blank">@jaredcatkinson</a> - PowerShell y detección</li>
+                <li><a href="https://medium.com/@olafhartong" target="_blank">@olafhartong</a> - Threat hunting</li>
+                <li><a href="https://medium.com/@michaelkoczwara" target="_blank">@michaelkoczwara</a> - Bug bounty</li>
+                <li><a href="https://bartblaze.blogspot.de/" target="_blank">Bart Blaze</a> - Malware y seguridad</li>
+                <li><a href="https://www.inversecos.com/" target="_blank">InverseCos</a> - Análisis técnico</li>
+            </ul>
+
+            <h2>🌐 Recursos Internacionales</h2>
+
+            <ul>
+                <li><a href="https://ti.360.net/blog/" target="_blank">360 Threat Intelligence</a> - Investigación desde China</li>
+                <li><a href="https://citizenlab.org" target="_blank">Citizen Lab</a> - Derechos digitales y espionaje</li>
+                <li><a href="https://www.group-ib.com/resources/threat-research.html" target="_blank">Group-IB</a> - Cibercrimen internacional</li>
+                <li><a href="https://www.clearskysec.com/blog/" target="_blank">ClearSky Security</a> - Amenazas en Medio Oriente</li>
+            </ul>
+
+            <h2>💡 Consejos para seguir estos blogs</h2>
+
+            <p><strong>Usa un lector RSS:</strong> La mayoría de estos blogs tienen feeds RSS. Usa herramientas como Feedly para no perderte ninguna actualización.</p>
+
+            <p><strong>Sigue en Twitter:</strong> Muchos investigadores comparten avances en Twitter antes de publicar en sus blogs.</p>
+
+            <p><strong>No te agobies:</strong> Es imposible leer todo. Elige 5-10 blogs que más te interesen y síguelos regularmente.</p>
+
+            <p><strong>Practica lo que lees:</strong> La teoría está bien, pero montar un lab y reproducir los ataques es donde realmente se aprende.</p>
+        `
     }
 ];
 
