@@ -2,6 +2,8 @@
 
 Una web educativa para aprender cosas interesantes y útiles de forma entretenida.
 
+🌐 **[Ver la web en vivo](https://repositorioinformatico.github.io/ocioso/)**
+
 ## 🎯 Propósito
 
 **Ocioso** está diseñado para alumnos que no quieren estudiar, pero que al menos pueden aprovechar su tiempo aprendiendo algo útil. En lugar de perder el tiempo sin más, aquí encontrarás conocimientos fascinantes presentados de forma atractiva y fácil de digerir.
