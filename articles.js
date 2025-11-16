@@ -125,6 +125,72 @@ const articles = [
 
             <p><strong>No distingue mayúsculas:</strong> <code>SELECT</code> y <code>select</code> funcionan igual, pero por convención se escribe en mayúsculas.</p>
         `
+    },
+    {
+        id: 'semantic-commits',
+        title: 'Mensajes de Commit Semánticos',
+        description: 'Cómo escribir mejores mensajes de commit y ser un mejor programador',
+        content: `
+            <h1>Semantic Commit Messages</h1>
+            <div class="article-meta">Mejora tu estilo de commits y conviértete en mejor programador</div>
+
+            <p>Ver cómo un pequeño cambio en el estilo de tus mensajes de commit puede hacerte un mejor programador.</p>
+
+            <h2>Formato</h2>
+
+            <p><code>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;</code></p>
+
+            <p><code>&lt;scope&gt;</code> es opcional</p>
+
+            <h2>Ejemplo</h2>
+
+            <pre><code>feat: add hat wobble
+^--^  ^------------^
+|     |
+|     +-> Resumen en tiempo presente
+|
++-------> Type: chore, docs, feat, fix, refactor, style, or test</code></pre>
+
+            <h2>Tipos de commits</h2>
+
+            <ul>
+                <li><code>feat</code> - Nueva funcionalidad para el usuario (no una nueva feature del script de build)</li>
+                <li><code>fix</code> - Corrección de un bug para el usuario (no un fix en un script de build)</li>
+                <li><code>docs</code> - Cambios en la documentación</li>
+                <li><code>style</code> - Formato, punto y coma faltantes, etc. Sin cambios en código de producción</li>
+                <li><code>refactor</code> - Refactorización de código de producción, ej. renombrar una variable</li>
+                <li><code>test</code> - Añadir tests faltantes, refactorizar tests. Sin cambios en código de producción</li>
+                <li><code>chore</code> - Actualizar tareas grunt, etc. Sin cambios en código de producción</li>
+            </ul>
+
+            <h2>Más ejemplos</h2>
+
+            <ul>
+                <li><code>feat(auth): add login with Google</code></li>
+                <li><code>fix(api): resolve null pointer exception</code></li>
+                <li><code>docs(readme): update installation instructions</code></li>
+                <li><code>style: format code with prettier</code></li>
+                <li><code>refactor(utils): rename parseData to transformData</code></li>
+                <li><code>test(user): add tests for user registration</code></li>
+                <li><code>chore(deps): update dependencies</code></li>
+            </ul>
+
+            <h2>Beneficios</h2>
+
+            <p><strong>Historial más legible:</strong> Es mucho más fácil entender qué cambios se hicieron y por qué.</p>
+
+            <p><strong>Automatización:</strong> Puedes generar changelogs automáticamente basándote en los tipos de commits.</p>
+
+            <p><strong>Mejor colaboración:</strong> Tu equipo entiende tus cambios más rápidamente.</p>
+
+            <h2>Referencias</h2>
+
+            <ul>
+                <li><a href="https://www.conventionalcommits.org/" target="_blank">Conventional Commits</a></li>
+                <li><a href="https://seesparkbox.com/foundry/semantic_commit_messages" target="_blank">Sparkbox - Semantic Commit Messages</a></li>
+                <li><a href="http://karma-runner.github.io/1.0/dev/git-commit-msg.html" target="_blank">Karma Git Commit Msg</a></li>
+            </ul>
+        `
     }
 ];
 

@@ -1,0 +1,5 @@
+# Archivo de documentación interna para Claude
+claude.md
+
+# Configuración local de Claude Code
+.claude/settings.local.json
